@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+--root {
+    --theme-color:#5074f3;
+}
+body{
+background-color: var(--theme-color);
+}
+.container{
+    width: 90%;
+    max-width: 25em;
+    /* border: 1px solid black; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+.card{
+    width: 100%;
+    padding: 2em 0;
+    background-color: rgba(255, 255, 255, 0.116);
+    text-align: center;
+    border-radius: 10px;
+border-style: ridge;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card .img_container{
+    height: 15.25em;
+    width: 15.25em;
+    display: block;
+    margin: -8.75em auto 0 auto;
+    background-color: aliceblue;
+    box-shadow: 0 0 0 0.3em #fff, 0 0 0 0.9em var(--theme-color);
+border-radius: 50%;
+}
+.img_container img{
+    width: 100%;
+    border-radius: 50%;
+    /* object-fit: cover; */
+
+}
+.container button{
+    display: block;
+    font-size: 1.50em;
+    width: 40%;
+    margin: 1em auto 0 auto;
+    padding: 0.50em 0;
+border-radius: 0.3em;
+border: 0;
+outline: 0;
+font-weight: 600;
+color: gold;
+}
+.card h2{
+    margin-top: 1.8em;
+    font-size: 600;
+    color: white;
+}
+.card h3{
+    font-size:  1.50em;
+    letter-spacing: 0.02em;
+    margin-top: 0.5em;
+    font-weight: 600;
+    color: lightcyan;
+
+}
+.card i{
+    color:white;
+    margin-right: 0.3em;
+}
+.card h4{
+    margin-top: 1em;
+    font-size: 1.25em;
+
+}
+
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .card:hover  {
+    transform: rotateY(360deg);
+  }
+  /* .like-icon{
+   top: 90%;
+   position: absolute;
+   right: 10%;
+    font-size: 40px;
+  } */
+  #likebtn{
+    height: 50px;
+    width: 50px;
+    background-image: url("https://cdn-images-1.medium.com/max/1600/1*hRJF5CNRG6tB-SkwVU5bCw.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  /* .like_btn .icon{
+    
+  }
+  .like_btn .btn_bg{
+    background: rgba(255, 192, 200, 0);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .like_btn .btn_bg:hover {
+    background: rgba(255, 192, 200, 0.7);
+  }
+  .like_btn{
+    display: flex;
+    align-items: center;
+  }
+  .like_btn .count{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-weight: 900;
+    margin-left: 6px;
+  }
+
+  .like_btn .icon:hover{
+    animation: like-anim 0.7s forwards;
+  } */
+  @keyframes like-anim{
+    to {
+        background-position: right;
+    }
+
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
